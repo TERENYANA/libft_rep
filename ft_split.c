@@ -13,10 +13,10 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-static int	ft_count_words(char const *s, char c)
+static int ft_count_words(char const *s, char c)
 {
-	int	count;
-	int	in_word;
+	int count;
+	int in_word;
 
 	count = 0;
 	in_word = 0;
@@ -34,9 +34,9 @@ static int	ft_count_words(char const *s, char c)
 	return (count);
 }
 
-static int	ft_wordlen(char const *s, char c)
+static int ft_wordlen(char const *s, char c)
 {
-	int	len;
+	int len;
 
 	len = 0;
 	while (s[len] && s[len] != c)
@@ -44,7 +44,7 @@ static int	ft_wordlen(char const *s, char c)
 	return (len);
 }
 
-static void	ft_free_split(char **split, int i)
+static void ft_free_split(char **split, int i)
 {
 	while (i > 0)
 	{
@@ -54,10 +54,10 @@ static void	ft_free_split(char **split, int i)
 	free(split);
 }
 
-static char	*ft_strndup(char const *s, int n)
+static char *ft_strndup(char const *s, int n)
 {
-	char	*word;
-	int		i;
+	char *word;
+	int i;
 
 	word = (char *)malloc(sizeof(char) * (n + 1));
 	if (!word)
@@ -72,12 +72,12 @@ static char	*ft_strndup(char const *s, int n)
 	return (word);
 }
 
-char	**ft_split(char const *s, char c)
+char **ft_split(char const *s, char c)
 {
-	char	**result;
-	int		words;
-	int		i;
-	int		wordlen;
+	char **result;
+	int words;
+	int i;
+	int wordlen;
 
 	if (!s)
 		return (NULL);

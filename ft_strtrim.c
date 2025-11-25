@@ -13,9 +13,9 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-static size_t	ft_strlen(char const *s)
+static size_t ft_strlen(char const *s)
 {
-	size_t	len;
+	size_t len;
 
 	len = 0;
 	while (s[len])
@@ -23,7 +23,7 @@ static size_t	ft_strlen(char const *s)
 	return (len);
 }
 
-static int	ft_isset(char c, char const *set)
+static int ft_isset(char c, char const *set)
 {
 	while (*set)
 	{
@@ -34,11 +34,11 @@ static int	ft_isset(char c, char const *set)
 	return (0);
 }
 
-static char	*ft_substr(char const *s, unsigned int start, size_t len)
+static char *ft_substr(char const *s, unsigned int start, size_t len)
 {
-	char	*substr;
-	size_t	i;
-	size_t	s_len;
+	char *substr;
+	size_t i;
+	size_t s_len;
 
 	if (!s)
 		return (NULL);
@@ -60,11 +60,11 @@ static char	*ft_substr(char const *s, unsigned int start, size_t len)
 	return (substr);
 }
 
-char	*ft_strtrim(char const *s1, char const *set)
+char *ft_strtrim(char const *s1, char const *set)
 {
-	size_t	start;
-	size_t	end;
-	size_t	len;
+	size_t start;
+	size_t end;
+	size_t len;
 
 	if (!s1 || !set)
 		return (NULL);

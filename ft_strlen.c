@@ -12,15 +12,15 @@
 
 #include <stddef.h>
 #include <stdio.h>
-size_t  ft_strlen(const char *s)
+size_t ft_strlen(const char *s)
 {
-	size_t i;
+  size_t i;
 
-	i = 0;
+  i = 0;
 
-	while(s[i] != '\0')
-		i++;
-	return (i);
+  while (s[i] != '\0')
+    i++;
+  return (i);
 }
 
 /*int main(int argc, char *argv[])

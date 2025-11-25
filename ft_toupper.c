@@ -10,15 +10,15 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h> 
+#include <stdio.h>
 #include <locale.h>
 #include <stdlib.h> // Required for return(1) in main
 
 int ft_toupper(int c)
 {
-	if (c >= 'a' && c <= 'z')
-		return (c - 32);
-	return (c);
+  if (c >= 'a' && c <= 'z')
+    return (c - 32);
+  return (c);
 }
 
 /*int main(int argc, char *argv[])

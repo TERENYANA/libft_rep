@@ -15,7 +15,7 @@
 #include <stdio.h>
 
 // Вывод целого числа на указанный файловый дескриптор
-void	ft_putnbr_fd(int n, int fd)
+void ft_putnbr_fd(int n, int fd)
 {
 	char c;
 
@@ -31,7 +31,7 @@ void	ft_putnbr_fd(int n, int fd)
 	}
 	if (n >= 10)
 		ft_putnbr_fd(n / 10, fd); // рекурсия для старших цифр
-	c = '0' + (n % 10);          // последняя цифра
+	c = '0' + (n % 10);			  // последняя цифра
 	write(fd, &c, 1);
 }
 

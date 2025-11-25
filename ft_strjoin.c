@@ -13,9 +13,9 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-static size_t	ft_strlen(const char *s)
+static size_t ft_strlen(const char *s)
 {
-	size_t	len;
+	size_t len;
 
 	len = 0;
 	while (s[len])
@@ -23,11 +23,11 @@ static size_t	ft_strlen(const char *s)
 	return (len);
 }
 
-char	*ft_strjoin(char const *s1, char const *s2)
+char *ft_strjoin(char const *s1, char const *s2)
 {
-	char	*joined;
-	size_t	i;
-	size_t	j;
+	char *joined;
+	size_t i;
+	size_t j;
 
 	if (!s1 || !s2)
 		return (NULL);

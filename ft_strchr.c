@@ -14,17 +14,17 @@
 #include <stdio.h>
 char *ft_strchr(const char *s, int c)
 {
-	char search_char = (char)c; 
+  char search_char = (char)c;
 
-	while (*s != '\0')
-	{
-		if (*s == search_char)
-			return ((char *)s);
-		s++;
-	}
-	if (*s == search_char)
-		return ((char *)s);
-	return (NULL);
+  while (*s != '\0')
+  {
+    if (*s == search_char)
+      return ((char *)s);
+    s++;
+  }
+  if (*s == search_char)
+    return ((char *)s);
+  return (NULL);
 }
 
 /*int main(int argc, char *argv[])
@@ -42,4 +42,3 @@ char *ft_strchr(const char *s, int c)
   printf("Character not found.\n");
   return (0);
   }   */
-

@@ -17,7 +17,8 @@ size_t ft_strlen(const char *s)
 {
 	size_t i = 0;
 
-	while (s[i] != '\0') {
+	while (s[i] != '\0')
+	{
 		i++;
 	}
 	return (i);
@@ -27,7 +28,7 @@ size_t strlcat(char *dst, const char *src, size_t dstsize)
 {
 	const size_t srclen = ft_strlen(src);
 	const size_t destlen = ft_strlen(dst);
-	size_t       i;
+	size_t i;
 
 	i = 0;
 
@@ -49,7 +50,7 @@ size_t strlcat(char *dst, const char *src, size_t dstsize)
   {
   size_t return_value;
   char src[] = "World!";
-  char dst[20] = "Hello, "; 
+  char dst[20] = "Hello, ";
 
 // Define the buffer size limit.
 size_t size = 20;

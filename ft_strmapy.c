@@ -12,7 +12,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-static size_t  ft_strlen(const char *s)
+static size_t ft_strlen(const char *s)
 {
 	size_t i = 0;
 	while (s[i])
@@ -41,7 +41,7 @@ char *ft_strmapi(char const *s, char (*f)(unsigned int, char))
 // for test
 char to_upper(unsigned int i, char c)
 {
-	(void)i; 
+	(void)i;
 	if (c >= 'a' && c <= 'z')
 		return c - 32;
 	return c;

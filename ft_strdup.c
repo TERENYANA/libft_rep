@@ -38,7 +38,6 @@ char *ft_strdup(const char *s1)
 	new[i] = '\0';
 
 	return new;
-
 }
 
 /*int main(void)
@@ -58,5 +57,3 @@ char *ft_strdup(const char *s1)
 
   return 0;
   }*/
-
-

@@ -16,20 +16,20 @@
 
 char *ft_strrchr(const char *s, int c)
 {
-	char *last_match = NULL;
-	unsigned char target = (unsigned char)c;
+  char *last_match = NULL;
+  unsigned char target = (unsigned char)c;
 
-	while (1)
-	{
-		if ((unsigned char)*s == target)
-		{
-			last_match = (char *)s;
-		}
-		if (*s == '\0')
-			break;
-		s++;
-	}
-	return (last_match);
+  while (1)
+  {
+    if ((unsigned char)*s == target)
+    {
+      last_match = (char *)s;
+    }
+    if (*s == '\0')
+      break;
+    s++;
+  }
+  return (last_match);
 }
 
 /*int main(int argc, char *argv[])

@@ -17,7 +17,7 @@ int ft_isalnum(int c)
 		return (1);
 	else
 		return (0);
-}   
+}
 
 /*int main(int argc , char *argv[])
 {
@@ -27,5 +27,5 @@ int ft_isalnum(int c)
 		return 1;
 	}
 	printf("%d/n", ft_isalnum(argv[1][0]));
-	return (0);    
+	return (0);
 }*/

@@ -19,8 +19,8 @@ void *memmove(void *dst, const void *src, size_t len)
 	unsigned char *d;
 	const unsigned char *s;
 
-	d = (unsigned char*)dst;
-	s = (const unsigned char*)src;
+	d = (unsigned char *)dst;
+	s = (const unsigned char *)src;
 
 	// Si les zones se chevauchent et que src < dst
 	// on copie de la fin vers le début

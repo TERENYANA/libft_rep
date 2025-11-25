@@ -14,9 +14,9 @@
 #include <stdio.h>
 #include <limits.h>
 
-void	ft_bzero(void *s, size_t n)
+void ft_bzero(void *s, size_t n)
 {
-	size_t	i;
+	size_t i;
 
 	i = 0;
 	while (i < n)
@@ -26,9 +26,9 @@ void	ft_bzero(void *s, size_t n)
 	}
 }
 
-void	*ft_calloc(size_t count, size_t size)
+void *ft_calloc(size_t count, size_t size)
 {
-	void	*ptr;
+	void *ptr;
 
 	// Overflow protection
 	if (size != 0 && count > SIZE_MAX / size)
