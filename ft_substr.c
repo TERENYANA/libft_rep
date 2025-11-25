@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: yyuskiv <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/11/25 16:12:04 by yyuskiv           #+#    #+#             */
+/*   Updated: 2025/11/25 16:12:09 by yyuskiv          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <stdlib.h>
 #include <stdio.h>
 
@@ -37,18 +49,18 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 
 	return (substr);
 }
-int	main(void)
-{
-	char *str = "Hello, world!";
-	char *sub;
+/*int	main(void)
+  {
+  char *str = "Hello, world!";
+  char *sub;
 
-	sub = ft_substr(str, 7, 5);
-	if (sub)
-	{
-		printf("Substring: %s\n", sub);
-		free(sub);
-	}
-	else
-		printf("Memory allocation failed\n");
-	return (0);
-}
+  sub = ft_substr(str, 7, 5);
+  if (sub)
+  {
+  printf("Substring: %s\n", sub);
+  free(sub);
+  }
+  else
+  printf("Memory allocation failed\n");
+  return (0);
+  }*/

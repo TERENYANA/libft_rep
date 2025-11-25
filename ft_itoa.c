@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_itoa.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: yyuskiv <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/11/25 15:50:51 by yyuskiv           #+#    #+#             */
+/*   Updated: 2025/11/25 15:51:02 by yyuskiv          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <stdlib.h>
 #include <stdio.h>
 
@@ -44,12 +56,12 @@ char	*ft_itoa(int n)
 	return (str);
 }
 
-int	main(void)
+/*int	main(void)
 {
 	char	*result;
 
 	printf("Testing ft_itoa:\n");
-	
+
 	result = ft_itoa(-2147483648);
 	printf("ft_itoa(-2147483648) = %s\n", result);
 	free(result);
@@ -79,4 +91,4 @@ int	main(void)
 	free(result);
 
 	return (0);
-}
+}*/

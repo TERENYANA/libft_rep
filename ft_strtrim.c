@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strtrim.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: yyuskiv <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/11/25 16:11:46 by yyuskiv           #+#    #+#             */
+/*   Updated: 2025/11/25 16:11:54 by yyuskiv          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <stdlib.h>
 #include <stdio.h>
 
@@ -68,12 +80,12 @@ char	*ft_strtrim(char const *s1, char const *set)
 	return (ft_substr(s1, start, len));
 }
 
-int	main(void)
-{
-	char	*result;
+/*int	main(void)
+  {
+  char	*result;
 
-	result = ft_strtrim("##Hello World##", "#");
-	printf("%s\n", result);
-	free(result);
-	return (0);
-}
+  result = ft_strtrim("##Hello World##", "#");
+  printf("%s\n", result);
+  free(result);
+  return (0);
+  }*/

@@ -14,7 +14,8 @@ int ft_memcmp(const void *s1, const void *s2, size_t n)
     }
     return (0);
 }
-int main(void)
+
+/*int main(void)
 {
     char data1[] = "abcdef";
     char data2[] = "abgdef";
@@ -22,4 +23,4 @@ int main(void)
 
     result = ft_memcmp(data1, data2, 5);
     printf("%d\n", result);
-}
+}*/

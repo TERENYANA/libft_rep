@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: yyuskiv <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/11/25 16:01:59 by yyuskiv           #+#    #+#             */
+/*   Updated: 2025/11/25 16:06:58 by yyuskiv          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <unistd.h>
 #include <fcntl.h>
 #include <stdio.h>
@@ -23,11 +35,11 @@ void	ft_putnbr_fd(int n, int fd)
 	write(fd, &c, 1);
 }
 
-int	main(void)
-{int fd;
-	ft_putnbr_fd(12345, 1);
-	write(1, "\n", 1);
-	ft_putnbr_fd(-9877, 1);
-	write(1, "\n", 1);
-	return 0;
-}
+/*int	main(void)
+  {int fd;
+  ft_putnbr_fd(12345, 1);
+  write(1, "\n", 1);
+  ft_putnbr_fd(-9877, 1);
+  write(1, "\n", 1);
+  return 0;
+  }*/

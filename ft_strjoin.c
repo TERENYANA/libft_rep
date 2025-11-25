@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: yyuskiv <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/11/25 16:09:13 by yyuskiv           #+#    #+#             */
+/*   Updated: 2025/11/25 16:09:19 by yyuskiv          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <stdlib.h>
 #include <stdio.h>
 
@@ -38,15 +50,15 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	return (joined);
 }
 
-int	main(void)
-{
-	char	*result;
+/*int	main(void)
+  {
+  char	*result;
 
-	result = ft_strjoin("Hello, ", "world!");
-	if (result)
-	{
-		printf("%s\n", result);
-		free(result);
-	}
-	return (0);
-}
+  result = ft_strjoin("Hello, ", "world!");
+  if (result)
+  {
+  printf("%s\n", result);
+  free(result);
+  }
+  return (0);
+  }*/

@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: yyuskiv <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/11/25 15:46:35 by yyuskiv           #+#    #+#             */
+/*   Updated: 2025/11/25 15:46:44 by yyuskiv          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <stdio.h>
 
 void	ft_bzero(void *s, size_t n)
@@ -14,7 +26,7 @@ void	ft_bzero(void *s, size_t n)
 	}
 }
 
-int	main(void)
+/*int	main(void)
 {
 	char	str[20] = "Hello World!";
 	size_t	i;
@@ -31,4 +43,4 @@ int	main(void)
 	printf("\n");
 
 	return (0);
-}
+}*/

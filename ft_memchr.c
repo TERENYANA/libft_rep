@@ -15,7 +15,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	return (NULL);
 }
 
-int main(void)
+/*int main(void)
 {
     char data[] = "abcdef";
     char *pos = ft_memchr(data, 'c', sizeof(data));
@@ -26,4 +26,4 @@ int main(void)
         printf("Caractère non trouvé\n");
 
     return 0;
-}
+}*/

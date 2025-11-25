@@ -17,7 +17,8 @@ void    *ft_memset(void *b, int c, size_t len)
     }
     return (b);
 }
-int main(int argc, char *argv[])
+
+/*int main(int argc, char *argv[])
 {
     char buffer[1024];
     if (argc != 2)
@@ -30,4 +31,4 @@ int main(int argc, char *argv[])
     ft_memset(buffer, argv[1][0], 5);
     printf("%s\n", buffer);
     return (0);
-}
+}*/

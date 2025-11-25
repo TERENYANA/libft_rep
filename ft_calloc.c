@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: yyuskiv <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/11/25 15:46:59 by yyuskiv           #+#    #+#             */
+/*   Updated: 2025/11/25 15:47:08 by yyuskiv          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <stdlib.h>
 #include <stdio.h>
 #include <limits.h>
@@ -30,7 +42,7 @@ void	*ft_calloc(size_t count, size_t size)
 	return (ptr);
 }
 
-int	main(void)
+/*int	main(void)
 {
 	int	*arr;
 	int	i;
@@ -45,4 +57,4 @@ int	main(void)
 
 	free(arr);
 	return (0);
-}
+}*/

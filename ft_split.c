@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_split.c                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: yyuskiv <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/11/25 16:07:45 by yyuskiv           #+#    #+#             */
+/*   Updated: 2025/11/25 16:08:05 by yyuskiv          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <stdlib.h>
 #include <stdio.h>
 
@@ -89,22 +101,22 @@ char	**ft_split(char const *s, char c)
 	return (result);
 }
 
-int	main(void)
-{
-	char	**result;
-	int		i;
+/*int	main(void)
+  {
+  char	**result;
+  int		i;
 
-	result = ft_split("Hello world from 42", ' ');
-	if (result)
-	{
-		i = 0;
-		while (result[i])
-		{
-			printf("%s\n", result[i]);
-			free(result[i]);
-			i++;
-		}
-		free(result);
-	}
-	return (0);
-}
+  result = ft_split("Hello world from 42", ' ');
+  if (result)
+  {
+  i = 0;
+  while (result[i])
+  {
+  printf("%s\n", result[i]);
+  free(result[i]);
+  i++;
+  }
+  free(result);
+  }
+  return (0);
+  }*/
