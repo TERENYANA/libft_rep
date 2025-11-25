@@ -1,0 +1,23 @@
+#include <stddef.h>
+#include <stdio.h>
+size_t  ft_strlen(const char *s)
+{
+    size_t i;
+
+    i = 0;
+
+    while(s[i] != '\0')
+        i++;
+    return (i);
+}
+
+int main(int argc, char *argv[])
+{
+    if(argc != 2)
+    {
+        printf("Usage: %s <string>\n", argv[0]);
+        return 1;
+    }
+    printf ("%zu\n", ft_strlen(argv[1]));
+    return 0;
+}
