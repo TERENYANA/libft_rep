@@ -6,12 +6,13 @@
 /*   By: yyuskiv <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/25 15:50:20 by yyuskiv           #+#    #+#             */
-/*   Updated: 2025/11/25 15:50:25 by yyuskiv          ###   ########.fr       */
+/*   Updated: 2025/11/25 17:53:30 by yyuskiv          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
-int ft_isprint(int c)
+
+int	ft_isprint(int c)
 {
 	if (c >= 32 && c <= 126)
 		return (1);

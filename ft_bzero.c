@@ -6,16 +6,16 @@
 /*   By: yyuskiv <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/25 15:46:35 by yyuskiv           #+#    #+#             */
-/*   Updated: 2025/11/25 15:46:44 by yyuskiv          ###   ########.fr       */
+/*   Updated: 2025/11/25 17:33:18 by yyuskiv          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-void ft_bzero(void *s, size_t n)
+void	ft_bzero(void *s, size_t n)
 {
-	unsigned char	*p;
-	size_t	i;
+	unsigned char		*p;
+	size_t				i;
 
 	p = (unsigned char *)s;
 	i = 0;

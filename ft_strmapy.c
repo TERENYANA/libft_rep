@@ -6,28 +6,33 @@
 /*   By: yyuskiv <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/25 16:10:36 by yyuskiv           #+#    #+#             */
-/*   Updated: 2025/11/25 16:10:42 by yyuskiv          ###   ########.fr       */
+/*   Updated: 2025/11/25 19:22:14 by yyuskiv          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <stdlib.h>
-static size_t ft_strlen(const char *s)
+
+static size_t	ft_strlen(const char *s)
 {
-	size_t i = 0;
+	size_t	i;
+
+	i = 0;
 	while (s[i])
 		i++;
 	return (i);
 }
-char *ft_strmapi(char const *s, char (*f)(unsigned int, char))
+
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	unsigned int i;
-	char *result;
+	unsigned int	i;
+	char			*result;
+
 	if (!s || !f)
-		return NULL;
+		return (NULL);
 	result = (char *)malloc(sizeof(char) * (ft_strlen(s) + 1));
 	if (!result)
-		return NULL;
+		return (NULL);
 	i = 0;
 	while (s[i])
 	{
@@ -35,17 +40,17 @@ char *ft_strmapi(char const *s, char (*f)(unsigned int, char))
 		i++;
 	}
 	result[i] = '\0';
-	return result;
+	return (result);
 }
 
-// for test
+/*
 char to_upper(unsigned int i, char c)
 {
 	(void)i;
 	if (c >= 'a' && c <= 'z')
 		return c - 32;
 	return c;
-}
+}*/
 
 /*int main(void)
   {

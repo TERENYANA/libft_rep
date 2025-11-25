@@ -6,16 +6,16 @@
 /*   By: yyuskiv <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/25 16:09:13 by yyuskiv           #+#    #+#             */
-/*   Updated: 2025/11/25 16:09:19 by yyuskiv          ###   ########.fr       */
+/*   Updated: 2025/11/25 19:10:49 by yyuskiv          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 #include <stdio.h>
 
-static size_t ft_strlen(const char *s)
+static size_t	ft_strlen(const char *s)
 {
-	size_t len;
+	size_t	len;
 
 	len = 0;
 	while (s[len])
@@ -23,11 +23,11 @@ static size_t ft_strlen(const char *s)
 	return (len);
 }
 
-char *ft_strjoin(char const *s1, char const *s2)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
-	char *joined;
-	size_t i;
-	size_t j;
+	char	*joined;
+	size_t	i;
+	size_t	j;
 
 	if (!s1 || !s2)
 		return (NULL);

@@ -6,16 +6,16 @@
 /*   By: yyuskiv <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/25 15:50:51 by yyuskiv           #+#    #+#             */
-/*   Updated: 2025/11/25 15:51:02 by yyuskiv          ###   ########.fr       */
+/*   Updated: 2025/11/25 17:55:01 by yyuskiv          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 #include <stdio.h>
 
-static int ft_numlen(int n)
+static int	ft_numlen(int n)
 {
-	int len;
+	int	len;
 
 	len = 0;
 	if (n <= 0)
@@ -28,11 +28,11 @@ static int ft_numlen(int n)
 	return (len);
 }
 
-char *ft_itoa(int n)
+char	*ft_itoa(int n)
 {
-	char *str;
-	int len;
-	long nbr;
+	char	*str;
+	int		len;
+	long	nbr;
 
 	nbr = n;
 	len = ft_numlen(n);

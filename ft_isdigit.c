@@ -6,12 +6,13 @@
 /*   By: yyuskiv <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/25 15:50:03 by yyuskiv           #+#    #+#             */
-/*   Updated: 2025/11/25 15:50:09 by yyuskiv          ###   ########.fr       */
+/*   Updated: 2025/11/25 17:51:04 by yyuskiv          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
-int ft_isdigit(int c)
+
+int	ft_isdigit(int c)
 {
 	if (c >= '0' && c <= '9')
 		return (1);

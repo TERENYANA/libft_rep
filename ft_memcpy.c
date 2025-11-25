@@ -6,18 +6,18 @@
 /*   By: yyuskiv <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/25 15:54:43 by yyuskiv           #+#    #+#             */
-/*   Updated: 2025/11/25 15:54:49 by yyuskiv          ###   ########.fr       */
+/*   Updated: 2025/11/25 18:36:47 by yyuskiv          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "stddef.h"
 #include <stdio.h>
 
-memcpy(void *dst, const void *src, size_t n)
+void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
-	size_t i;
-	unsigned char *d;
-	const unsigned char *s;
+	const unsigned char	*s;
+	unsigned char		*d;
+	size_t				i;
 
 	d = (unsigned char *)dst;
 	s = (const unsigned char *)src;

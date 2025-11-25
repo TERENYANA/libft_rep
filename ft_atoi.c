@@ -6,34 +6,29 @@
 /*   By: yyuskiv <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/25 15:42:20 by yyuskiv           #+#    #+#             */
-/*   Updated: 2025/11/25 15:44:56 by yyuskiv          ###   ########.fr       */
+/*   Updated: 2025/11/25 17:19:38 by yyuskiv          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
-int atoi(const char *str)
+
+int	atoi(const char *str)
 {
-	int i;
-	int sign;
-	int result;
+	int	i;
+	int	sign;
+	int	result;
 
 	i = 0;
 	sign = 1;
 	result = 0;
-
-	// Ignorer les espaces blancs initiaux
 	while (str[i] == ' ' || (str[i] >= 9 && str[i] <= 13))
 		i++;
-
-	// Gérer le signe
 	if (str[i] == '-' || str[i] == '+')
 	{
 		if (str[i] == '-')
 			sign = -1;
 		i++;
 	}
-
-	// Convertir les chiffres en entier
 	while (str[i] >= '0' && str[i] <= '9')
 	{
 		result = result * 10 + (str[i] - '0');
@@ -41,7 +36,6 @@ int atoi(const char *str)
 	}
 	return (result * sign);
 }
-
 /*int main(int argc, char *argv[])
   {
   if (argc != 2)

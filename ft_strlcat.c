@@ -6,17 +6,18 @@
 /*   By: yyuskiv <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/25 16:09:29 by yyuskiv           #+#    #+#             */
-/*   Updated: 2025/11/25 16:09:41 by yyuskiv          ###   ########.fr       */
+/*   Updated: 2025/11/25 19:13:55 by yyuskiv          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
 #include <stdio.h>
 
-size_t ft_strlen(const char *s)
+size_t	ft_strlen(const char *s)
 {
-	size_t i = 0;
+	size_t	i;
 
+	i = 0;
 	while (s[i] != '\0')
 	{
 		i++;
@@ -24,25 +25,23 @@ size_t ft_strlen(const char *s)
 	return (i);
 }
 
-size_t strlcat(char *dst, const char *src, size_t dstsize)
+size_t	strlcat(char *dst, const char *src, size_t dstsize)
 {
-	const size_t srclen = ft_strlen(src);
-	const size_t destlen = ft_strlen(dst);
-	size_t i;
+	const size_t	srclen;
+	const size_t	destlen;
+	size_t			i;
 
+	srclen = ft_strlen(src);
+	destlen = ft_strlen(dst);
 	i = 0;
-
 	if (destlen >= dstsize)
 		return (dstsize + srclen);
-
 	while (src[i] != '\0' && (destlen + i) < (dstsize - 1))
 	{
 		dst[destlen + i] = src[i];
 		i++;
 	}
-
 	dst[destlen + i] = '\0';
-
 	return (destlen + srclen);
 }
 

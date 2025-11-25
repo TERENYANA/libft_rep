@@ -6,29 +6,31 @@
 /*   By: yyuskiv <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/25 16:11:10 by yyuskiv           #+#    #+#             */
-/*   Updated: 2025/11/25 16:11:15 by yyuskiv          ###   ########.fr       */
+/*   Updated: 2025/11/25 19:41:32 by yyuskiv          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <stddef.h>
 
-char *ft_strnstr(const char *haystack, const char *needle, size_t len)
+char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
-	size_t i, j;
+	size_t	i;
+	size_t	j;
 
 	if (!*needle)
-		return (char *)haystack;
-
-	for (i = 0; i < len && haystack[i]; i++)
+		return ((char *)haystack);
+	i = 0;
+	while (i < len && haystack[i])
 	{
 		j = 0;
 		while (needle[j] && (i + j) < len && haystack[i + j] == needle[j])
 			j++;
 		if (!needle[j])
-			return (char *)(haystack + i);
+			return ((char *)(haystack + i));
+		i++;
 	}
-	return NULL;
+	return (NULL);
 }
 
 /*int main(void)

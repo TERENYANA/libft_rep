@@ -6,7 +6,7 @@
 /*   By: yyuskiv <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/25 16:01:59 by yyuskiv           #+#    #+#             */
-/*   Updated: 2025/11/25 16:06:58 by yyuskiv          ###   ########.fr       */
+/*   Updated: 2025/11/25 18:56:44 by yyuskiv          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,14 @@
 #include <fcntl.h>
 #include <stdio.h>
 
-// Вывод целого числа на указанный файловый дескриптор
-void ft_putnbr_fd(int n, int fd)
+void	ft_putnbr_fd(int n, int fd)
 {
-	char c;
+	char	c;
 
-	if (n == -2147483648) // минимальное значение int
+	if (n == -2147483648)
 	{
 		write(fd, "-2147483648", 11);
-		return;
+		return ;
 	}
 	if (n < 0)
 	{
@@ -30,13 +29,14 @@ void ft_putnbr_fd(int n, int fd)
 		n = -n;
 	}
 	if (n >= 10)
-		ft_putnbr_fd(n / 10, fd); // рекурсия для старших цифр
-	c = '0' + (n % 10);			  // последняя цифра
+		ft_putnbr_fd(n / 10, fd);
+	c = '0' + (n % 10);
 	write(fd, &c, 1);
 }
 
 /*int	main(void)
-  {int fd;
+  {
+  int fd;
   ft_putnbr_fd(12345, 1);
   write(1, "\n", 1);
   ft_putnbr_fd(-9877, 1);

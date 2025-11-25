@@ -6,19 +6,18 @@
 /*   By: yyuskiv <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/25 16:08:55 by yyuskiv           #+#    #+#             */
-/*   Updated: 2025/11/25 16:09:00 by yyuskiv          ###   ########.fr       */
+/*   Updated: 2025/11/25 19:09:50 by yyuskiv          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-void ft_striteri(char *s, void (*f)(unsigned int, char *))
+void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
-	unsigned int i;
+	unsigned int	i;
 
 	if (!s || !f)
-		return;
-
+		return ;
 	i = 0;
 	while (s[i])
 	{

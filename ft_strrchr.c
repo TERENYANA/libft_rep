@@ -6,7 +6,7 @@
 /*   By: yyuskiv <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/25 16:11:29 by yyuskiv           #+#    #+#             */
-/*   Updated: 2025/11/25 16:11:34 by yyuskiv          ###   ########.fr       */
+/*   Updated: 2025/11/25 20:12:58 by yyuskiv          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,22 +14,24 @@
 #include <stdio.h>
 #include <string.h>
 
-char *ft_strrchr(const char *s, int c)
+char	*ft_strrchr(const char *s, int c)
 {
-  char *last_match = NULL;
-  unsigned char target = (unsigned char)c;
+	char			*last_match;
+	unsigned char	target;
 
-  while (1)
-  {
-    if ((unsigned char)*s == target)
-    {
-      last_match = (char *)s;
-    }
-    if (*s == '\0')
-      break;
-    s++;
-  }
-  return (last_match);
+	target = (unsigned char)c;
+	*last_match = NULL;
+	while (1)
+	{
+		if ((unsigned char)*s == target)
+		{
+			last_match = (char *)s;
+		}
+		if (*s == '\0')
+			break ;
+		s++;
+	}
+	return (last_match);
 }
 
 /*int main(int argc, char *argv[])
