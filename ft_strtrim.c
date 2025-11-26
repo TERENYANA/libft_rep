@@ -3,27 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yyuskiv <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: yyuskiv <yyuskiv@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/25 16:11:46 by yyuskiv           #+#    #+#             */
-/*   Updated: 2025/11/25 16:11:54 by yyuskiv          ###   ########.fr       */
+/*   Updated: 2025/11/26 18:27:59 by yyuskiv          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 #include <stdio.h>
+#include "libft.h"
 
-static size_t ft_strlen(char const *s)
-{
-	size_t len;
-
-	len = 0;
-	while (s[len])
-		len++;
-	return (len);
-}
-
-static int ft_isset(char c, char const *set)
+int	ft_isset(char c, char const *set)
 {
 	while (*set)
 	{
@@ -34,37 +25,11 @@ static int ft_isset(char c, char const *set)
 	return (0);
 }
 
-static char *ft_substr(char const *s, unsigned int start, size_t len)
+char	*ft_strtrim(char const *s1, char const *set)
 {
-	char *substr;
-	size_t i;
-	size_t s_len;
-
-	if (!s)
-		return (NULL);
-	s_len = ft_strlen(s);
-	if (start >= s_len)
-		return ((char *)malloc(1));
-	if (len > s_len - start)
-		len = s_len - start;
-	substr = (char *)malloc((len + 1) * sizeof(char));
-	if (!substr)
-		return (NULL);
-	i = 0;
-	while (i < len)
-	{
-		substr[i] = s[start + i];
-		i++;
-	}
-	substr[i] = '\0';
-	return (substr);
-}
-
-char *ft_strtrim(char const *s1, char const *set)
-{
-	size_t start;
-	size_t end;
-	size_t len;
+	size_t	start;
+	size_t	end;
+	size_t	len;
 
 	if (!s1 || !set)
 		return (NULL);

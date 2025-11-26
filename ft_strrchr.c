@@ -20,7 +20,7 @@ char	*ft_strrchr(const char *s, int c)
 	unsigned char	target;
 
 	target = (unsigned char)c;
-	*last_match = NULL;
+	last_match = NULL;
 	while (1)
 	{
 		if ((unsigned char)*s == target)

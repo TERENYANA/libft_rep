@@ -3,31 +3,31 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yyuskiv <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: yyuskiv <yyuskiv@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/25 15:55:02 by yyuskiv           #+#    #+#             */
-/*   Updated: 2025/11/25 18:42:19 by yyuskiv          ###   ########.fr       */
+/*   Updated: 2025/11/26 18:52:00 by yyuskiv          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <stddef.h>
 
-void	*memmove(void *dst, const void *src, size_t len)
+void	*ft_memmove(void *dst, const void *src, size_t len)
 {
 	size_t				i;
 	unsigned char		*d;
-	const unsigned char	*s;
 
+	if (!src && !dst)
+		return (NULL);
 	d = (unsigned char *)dst;
-	s = (const unsigned char *)src;
-	if (s < d && s + len > d)
+	if ((unsigned char *)src < d)
 	{
 		i = len;
 		while (i > 0)
 		{
 			i--;
-			d[i] = s[i];
+			d[i] = ((unsigned char *)src)[i];
 		}
 	}
 	else
@@ -35,7 +35,7 @@ void	*memmove(void *dst, const void *src, size_t len)
 		i = 0;
 		while (i < len)
 		{
-			d[i] = s[i];
+			d[i] = ((unsigned char *)src)[i];
 			i++;
 		}
 	}

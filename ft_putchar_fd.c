@@ -6,7 +6,7 @@
 /*   By: yyuskiv <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/25 15:55:37 by yyuskiv           #+#    #+#             */
-/*   Updated: 2025/11/25 18:50:30 by yyuskiv          ###   ########.fr       */
+/*   Updated: 2025/11/26 17:36:47 by yyuskiv          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	ft_putchar_fd(char c, int fd)
 
 /*int main(void)
   {
-  ft_putchar_fd('A', 1); // Should print 'A' to standard output
-  ft_putchar_fd('\n', 1); // New line for better readability
+  ft_putchar_fd('c', 1);
+  ft_putchar_fd('\n', 1);
   return 0;
   }*/

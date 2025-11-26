@@ -3,33 +3,22 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yyuskiv <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: yyuskiv <yyuskiv@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/25 16:09:29 by yyuskiv           #+#    #+#             */
-/*   Updated: 2025/11/25 19:13:55 by yyuskiv          ###   ########.fr       */
+/*   Updated: 2025/11/26 18:45:00 by yyuskiv          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
 #include <stdio.h>
+#include "libft.h"
 
-size_t	ft_strlen(const char *s)
+size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
+	size_t	srclen;
+	size_t	destlen;
 	size_t	i;
-
-	i = 0;
-	while (s[i] != '\0')
-	{
-		i++;
-	}
-	return (i);
-}
-
-size_t	strlcat(char *dst, const char *src, size_t dstsize)
-{
-	const size_t	srclen;
-	const size_t	destlen;
-	size_t			i;
 
 	srclen = ft_strlen(src);
 	destlen = ft_strlen(dst);
